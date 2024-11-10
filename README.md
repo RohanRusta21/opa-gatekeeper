@@ -64,8 +64,27 @@ kubectl apply -f ns-must-label.yaml
 kubectl get constraints
 ```
 
-### Validate namespace constraint
+### Validate namespace constraint without label
 
 ```bash
 kubectl create ns test
 ```
+
+### Validate namespace constraint with label
+
+```bash
+kubectl create -f test-namespace.yaml
+```
+
+### Check for Violations
+
+```bash
+kubectl get constraints
+kubectl describe  rohanrequiredlabels ns-must-label-state
+```
+
+
+
+
+
+
