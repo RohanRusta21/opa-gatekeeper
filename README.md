@@ -40,6 +40,8 @@ kubectl create -f pod-must-have-label.yaml
 kubectl get constraints
 ```
 
+### Apply our custom application
+
 ```bash
 kubectl run weather-app --image=wededo4644/weather-app:88
 kubectl expose pod weather-app --type=NodePort --port=3000 --target-port=3000 --name=weather-app-service
