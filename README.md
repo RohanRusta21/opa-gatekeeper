@@ -53,3 +53,19 @@ kubectl expose pod weather-app --type=NodePort --port=3000 --target-port=3000 --
 kubectl run weather-app --image=wededo4644/weather-app:88 --labels=app=test
 kubectl expose pod weather-app --type=NodePort --port=3000 --target-port=3000 --name=weather-app-service
 ```
+
+### Apply for namespace
+
+```bash
+kubectl apply -f ns-must-label.yaml
+```
+
+```bash
+kubectl get constraints
+```
+
+### Validate namespace constraint
+
+```bash
+kubectl create ns test
+```
