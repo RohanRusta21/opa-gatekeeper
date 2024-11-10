@@ -29,3 +29,9 @@ Note : “constrainttemplates.templates.gatekeeper.sh” using that we can creat
 kubectl create -f ConstraintTemplate.yaml
 kubectl get ConstraintTemplate
 ```
+
+### Apply/Create your constraint
+
+```bash
+kubectl create -f pod-must-have-label.yaml
+```
