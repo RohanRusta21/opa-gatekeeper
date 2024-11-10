@@ -35,3 +35,12 @@ kubectl get ConstraintTemplate
 ```bash
 kubectl create -f pod-must-have-label.yaml
 ```
+
+```bash 
+kubectl get constraints
+```
+
+```bash
+kubectl run weather-app --image=wededo4644/weather-app:88
+kubectl expose pod weather-app --type=NodePort --port=3000 --target-port=3000 --name=weather-app-service
+```
